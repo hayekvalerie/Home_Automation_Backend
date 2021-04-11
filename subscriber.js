@@ -1,5 +1,7 @@
 var mqtt = require('mqtt');
-var client = mqtt.connect('mqtt://test.mosquitto.org');
+//var client = mqtt.connect('mqtt://test.mosquitto.org');
+
+var client=mqtt.connect('mqtt//212.98.137.194:1883',{username:'iotleb',password:'iotleb'});
 
 const topic = 'topic';
 const topic1 = 'LAMP';
